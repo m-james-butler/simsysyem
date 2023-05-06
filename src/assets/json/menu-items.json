@@ -1,0 +1,19 @@
+{
+  "menuItems": {
+    "Main": {
+      "children": ["Main", "News", "Contact", "Credits", "Join", "Rules"]
+    },
+    "Personnel": {
+      "children": ["Main", "News", "Contact", "Credits", "Join", "Rules"]
+    },
+    "Sim": {
+      "children": ["Main", "News", "Contact", "Credits", "Join", "Rules"]
+    },
+    "Archives": {
+      "children": ["Main", "News", "Contact", "Credits", "Join", "Rules"]
+    },
+    "Search": {
+      "children": []
+    }
+  }
+}

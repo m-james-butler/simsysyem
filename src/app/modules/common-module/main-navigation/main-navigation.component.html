@@ -1,0 +1,11 @@
+<div id="menu">
+  <div class="nav-main">
+    <ul>
+      <li *ngFor="let entry of menuItems">
+        <a routerLink="{{ entry }}" routerLinkActive="active">
+          <span>{{ entry }}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

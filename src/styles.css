@@ -1,1 +1,385 @@
 /* You can add global styles to this file, and also import other style files */
+@import url(./assets/css/structure.css);
+
+:root {
+  --page-bg-image: url(./assets/imgs/stars_back_main.gif);
+  --generic-bg-color: #000;
+  --primary-text-color: #7ca07c;
+  --primary-font-family: "lucida grande", verdana, arial, sans-serif;
+  --primary-font-size: 75%;
+  --default-line-height: 1.5;
+  --upper-background: url(./assets/imgs/upper_bg.png);
+  --upper-bg-height: 150px;
+  --dark-border-color: 1px solid #10280c;
+  --header-bg-color: #10280c;
+  --app-width: 98%;
+  --content-offset: -105px 0 1em 0;
+  --header-height: 130px;
+  --upper-header-bg: url(./assets/imgs/upper-header-bg.png);
+  --bright-text-color: #fff;
+  --signin-panel-bg: #4a6440;
+  --signin-panel-height: 235px;
+  --neutral-border: 1px solid #d5d5d5;
+  --neutral-text-color: #777;
+  --neutral-background: #e7eee4;
+  --bright-border: 1px solid #7ba66b;
+  --link-color: #777;
+  --signin-link: #a3c586;
+  --dark-bg-color: #19371a;
+  --gradient-soft: url(./assets/imgs/gradient-soft-50.png);
+  --main-menu-height: 32px;
+  --medium-border: 1px solid #647160;
+  --sub-nav-hover-color: #444;
+  --sub-nav-hover-bg: #001701;
+  --header-text-color: #ccc;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--page-bg-image);
+  color: var(--primary-text-color);
+  font-family: var(--primary-font-family);
+  font-size: var(--primary-font-size);
+  line-height: var(--default-line-height);
+  text-align: center;
+}
+
+#upper-bg {
+  margin: 0;
+  padding: 0;
+  height: var(--upper-bg-height);
+  background: var(--generic-bg-color) var(--upper-background) no-repeat 0 0;
+  border-bottom: var(--dark-border-color);
+}
+
+.wrapper {
+  width: var(--app-width);
+  text-align: left;
+  margin: 0 auto;
+}
+
+#body {
+  position: relative;
+  margin: var(--content-offset);
+  background: var(--generic-bg-color);
+  border: var(--dark-border-color);
+}
+
+#upper-header {
+  position: relative;
+  height: var(--header-height);
+  margin-bottom: -10px;
+  border-radius: 5px 5px 0 0;
+  background: var(--header-bg-color) var(--upper-header-bg) no-repeat 0 0;
+}
+
+.signin-container {
+  position: relative;
+  height: 30px;
+}
+
+.signin {
+  position: relative;
+  float: right;
+  margin: 8px 10px 0 10px;
+  padding: 3px 8px;
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--bright-text-color);
+  font-weight: bold;
+  border: 0;
+  font-size: 90%;
+  border-radius: 3px;
+}
+
+.signin:hover {
+  border: 0;
+  color: var(--bright-text-color);
+  background: var(--signin-panel-bg) var(--gradient-soft) repeat-x center left;
+  background: rgba(0, 0, 0, 0.4);
+}
+.signin-active,
+.signin-active:hover {
+  background: var(--signin-panel-bg) !important;
+  color: var(--bright-text-color);
+}
+
+.signin-panel {
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  padding: 0.5em;
+  width: var(--signin-panel-height);
+  z-index: 100;
+  color: var(--bright-text-color);
+  background: var(--signin-panel-bg);
+  font-size: 90%;
+  border-radius: 3px;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: var(--neutral-border);
+  color: var(--neutral-text-color) !important;
+  font-family: var(--primary-font-family);
+  font-size: 1.2em;
+  border-radius: 2px;
+}
+
+.signin-panel input[type="text"],
+.signin-panel input[type="password"] {
+  width: 210px;
+  padding-top: 5px !important;
+  border: var(--bright-border);
+  border-radius: 3px;
+  background: var(--neutral-background) !important;
+}
+
+button.button-signin {
+  height: 24px;
+  font-size: 95%;
+  font-weight: bold;
+  border: var(--neutral-border);
+  border-radius: 3px;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.55);
+  background: var(--neutral-background);
+  color: var(--neutral-text-color);
+}
+
+button.button-signin:hover {
+  border: var(--dark-border-color);
+  background: var(--dark-bg-color) var(--gradient-soft) repeat-x center left;
+  color: var(--primary-text-color);
+  text-shadow: 0px 1px 0px rgba(16, 40, 12, 0.55);
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  border-bottom: 1px solid;
+}
+
+a:hover {
+  color: #555;
+  border-bottom: 0;
+}
+
+a.edit {
+  color: #bbb;
+  border: none;
+}
+a.edit:hover {
+  color: #a3c586;
+}
+
+.signin-panel a {
+  border: none;
+  color: var(--signin-link);
+}
+
+.signin-panel a:hover {
+  border-bottom: 1px solid;
+}
+
+#menu {
+  height: var(--main-menu-height);
+  line-height: var(--main-menu-height);
+  margin-top: 67px;
+  border-bottom: var(--medium-border);
+  font-size: 110%;
+}
+
+#menu .nav-main {
+  height: var(--main-menu-height);
+}
+
+#menu .nav-main ul {
+  margin: 0 0 0 5px;
+  padding: 0;
+  width: auto;
+  list-style-type: none;
+}
+
+#menu .nav-main ul li {
+  float: left;
+  margin: 0 2px 0 0;
+}
+
+#menu .nav-main ul li a {
+  display: block;
+  padding: 0 25px;
+  text-decoration: none;
+  color: var(--bright-text-color);
+  font-weight: bold;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 4px 4px 0 0;
+}
+
+#menu .nav-main ul li a:hover {
+  background: transparent url(./assets/imgs/menu-bg-hover.png) repeat-x bottom
+    left;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
+}
+
+#menu .nav-main ul li a.active {
+  background: transparent url(./assets/imgs/menu-bg-active.png) repeat-x bottom
+    left;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
+}
+
+.nav-sub {
+  margin: 0 0 20px 0;
+  text-align: left;
+  font-size: 92%;
+}
+
+.nav-sub ul {
+  margin: 0 0 0 5px;
+  padding: 0;
+  width: auto;
+  list-style: none;
+  list-style-type: none;
+}
+
+.nav-sub ul li {
+  float: left;
+  margin: 0 2px 0 0;
+}
+
+.nav-sub ul li a {
+  display: block;
+  padding: 0;
+  text-decoration: none;
+  color: var(--neutral-text-color);
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  font-weight: bold;
+}
+
+.nav-sub ul li a:hover {
+  color: var(--sub-nav-hover-color);
+  background: var(--sub-nav-hover-bg);
+  border: var(--dark-border-color);
+}
+
+.nav-sub ul li a span {
+  padding: 2px 17px;
+}
+
+.infobox {
+  width: 225px;
+  margin-top: 2em;
+  float: left;
+  font-weight: bold;
+  font-size: 92%;
+  text-align: center;
+  border-right: var(--dark-border-color);
+}
+
+.infobox-image-container {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  margin: 0.5em auto;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.37);
+}
+
+.infobox-image {
+  max-width: 100%;
+  margin: auto;
+}
+
+.content {
+  margin-left: 225px;
+  line-height: 1.4;
+  padding: 1em 15px 1em 1em;
+  background: var(--generic-bg-color);
+  border: var(--dark-border-color);
+  border-right: 0;
+  border-left: 0;
+}
+
+.page-head {
+  color: var(--header-text-color);
+}
+
+#footer {
+  clear: both;
+  line-height: 1.4;
+  padding: 0.8em 0;
+  text-align: center;
+  font-size: 90%;
+  color: var(--neutral-text-color);
+  border-radius: 0 0 6px 6px;
+}
+
+#tabs {
+  float: left;
+  width: 100%;
+  margin: 1em 0;
+}
+
+.ui-tabs-nav{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ui-tabs-nav:after {
+  display: block;
+  clear: both;
+  content: " ";
+}
+
+.ui-tabs-nav li {
+  float: left;
+  margin: 0 3px 0 0;
+  min-width: 84px;
+}
+
+.ui-tabs-nav a {
+  position: relative;
+  z-index: 2;
+  padding-left: 0;
+  line-height: 1.4;
+  font-size: 92%;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  background: var(--signin-panel-bg);
+  border: var(--dark-border-color);
+  border-bottom: 0;
+  color: var(--signin-link);
+  text-shadow: 0px 1px 0px rgba(0,0,0,0.4);
+  border-radius: 3px 3px 0 0;
+}
+
+.ui-tabs-nav a, .ui-tabs-nav a span{
+  display: block;
+  padding: 0 15px;
+}
+
+*>.ui-tabs-nav a span {
+  width: auto;
+  height: auto;
+}
+
+.ui-tabs-nav a span {
+  min-width: 64px;
+  min-height: 21px;
+  padding-top: 4px;
+  padding-right: 0;
+}
+
+.ui-tabs-panel {
+  padding: 0.5em 8px;
+  border-top: 3px solid var(--header-bg-color);
+  background: var(--generic-bg-color);
+}

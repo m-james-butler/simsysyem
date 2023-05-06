@@ -1,0 +1,40 @@
+<div class="signin-container">
+  <div class="signin-panel" *ngIf="signInActive">
+    <form>
+      <p>
+        Email
+        <br />
+        <input type="text" name="email" class="signin-panel-input" />
+      </p>
+      <p>
+        Password
+        <br />
+        <input type="password" name="password" class="signin-panel-input" />
+      </p>
+      <p>
+        <button
+          class="button-signin"
+          type="button"
+          name="submit"
+          value="Log In"
+        >
+          Log In
+        </button>
+        &nbsp; &nbsp;
+        <input id="remember" type="checkbox" name="remember" value="yes" />
+        <label for="remember">Remember Me</label>
+      </p>
+      <p>
+        <a href="#">Forgot your password?</a>
+      </p>
+    </form>
+  </div>
+  <button
+    id="signin"
+    [ngClass]="signInActive ? 'signin signin-active' : 'signin'"
+    type="button"
+    (click)="loginClick()"
+  >
+    Log In
+  </button>
+</div>

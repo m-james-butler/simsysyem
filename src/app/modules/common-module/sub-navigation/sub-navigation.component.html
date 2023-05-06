@@ -1,0 +1,10 @@
+<div class="nav-sub">
+  <br />
+  <ul>
+    <li *ngFor="let link of menuItems">
+      <a routerLink="./{{ link }}">
+        <span>{{ link }}</span>
+      </a>
+    </li>
+  </ul>
+</div>

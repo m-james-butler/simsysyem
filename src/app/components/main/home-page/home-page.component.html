@@ -1,0 +1,50 @@
+<h1 class="page-head"> {{headerText}}</h1>
+<div [innerHtml]="content"></div>
+
+<div id="tabs">
+    <ul class="ui-tabs-nav">
+        <li>
+            <a href="javascript:void(0)"(click)="changeTab(1)">
+                <span>Latest News Items</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" (click)="changeTab(2)">
+                <span>Latest Mission Posts</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0)" (click)="changeTab(3)">
+                <span>Latest Personal Logs</span>
+            </a>
+        </li>
+    </ul>
+    <div class="ui-tabs-panel"></div>
+    <div id="one" *ngIf="tab===1">
+        <h2 class="page-subhead">Latest News Items</h2>
+        <div *ngFor="let post of news">
+            <h4> <a href="#">{{ post.title }}</a> </h4>
+            <p class="gray fontSmall">Post on {{ post.date }} by {{ post.author }} in {{ post.category }}</p>
+            <p [innerHtml]="post.content"></p>
+            <br>
+        </div>
+    </div>
+    <div id="two" *ngIf="tab===2">
+        <h2 class="page-subhead">Latest Posts</h2>
+        <div *ngFor="let post of news">
+            <h4> <a href="#">{{ post.title }}</a> </h4>
+            <p class="gray fontSmall">Post on {{ post.date }} by {{ post.author }} in {{ post.category }}</p>
+            <p [innerHtml]="post.content"></p>
+            <br>
+        </div>
+    </div>
+    <div id="three" *ngIf="tab===3">
+        <h2 class="page-subhead">Latest Logs</h2>
+        <div *ngFor="let post of news">
+            <h4> <a href="#">{{ post.title }}</a> </h4>
+            <p class="gray fontSmall">Post on {{ post.date }} by {{ post.author }} in {{ post.category }}</p>
+            <p [innerHtml]="post.content"></p>
+            <br>
+        </div>
+    </div>
+</div>
