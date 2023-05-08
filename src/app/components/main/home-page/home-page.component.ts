@@ -12,6 +12,8 @@ export class HomePageComponent implements OnInit {
   headerText: string = "Default Text";
   content: string = "Default Content"
   news: any;
+  postsList: any;
+  logs: any;
   tab: number = 1;
   
   ngOnInit(): void {
@@ -20,6 +22,9 @@ export class HomePageComponent implements OnInit {
     this.headerText = this.page.get("Main").header;
     this.content = this.page.get("Main").content;
     this.news = posts.news;
+    this.postsList = posts.posts
+    this.logs = posts.logs
+    console.log("LOGS", this.logs)
   }
 
   changeTab(tab: number) {

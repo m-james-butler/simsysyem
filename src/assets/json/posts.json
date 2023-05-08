@@ -15,6 +15,23 @@
             "content": "<em>\"One of the best role plays on the net today, Memory Theta excels in all aspects of simming. From deep character development to intricate plot devices to taking the unexpected turn, this crew always keeps things interesting. Their commitment to excellence has been recognized many times over, most recently by taking home top prize at the Tournament of Simulations.\"</em><br><br> Truth be told, I had never heard of this particular award before, but it appears we were nominated multiple times last year since the explanation given includes our top place in last year's Tournament of Sims. I have no idea who nominated because I had no idea we were nominated. Congratulations on becoming internet famous!"
         }
     ],
-    "posts": [],
+    "posts": [
+        {
+            "id": 1,
+            "title": "Dispensing Experience",
+            "date" : "02 May 2023 @ 2:01pm",
+            "author": ["Commander Jack Lashmore", "Captain T'Rama"],
+            "summary": "The past seventeen months were interesting, to say the least. Despite rather cryptic orders to take command of the retrofit of a beaten-down Luna class starship, the truth and reality were quite something else. First, T'Rama and Jack did not go near their supposed command and in fact, spent the",
+            "content": "Lorem Ipsum"
+        },
+        {
+            "id": 2,
+            "title": "Room to Make His Big Mistakes",
+            "date" : "24 April 2023 @ 12:50am",
+            "author": ["Lieutenant Luka Matashi"],
+            "summary": "A faint salt-tinged breeze and the sound of Calypso greeted Luka as he entered the holodeck. Captain D'Nii had invited him and specified that the dress code was \"beach party.\" The part of Luka that had grown comfortable on the ship and close to his crewmates wanted to point out…",
+            "content": "Lorem Ipsum"
+        }
+    ],
     "logs": []
 }

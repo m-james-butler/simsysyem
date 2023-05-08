@@ -31,20 +31,26 @@
     </div>
     <div id="two" *ngIf="tab===2">
         <h2 class="page-subhead">Latest Posts</h2>
-        <div *ngFor="let post of news">
+        <div *ngFor="let post of postsList">
             <h4> <a href="#">{{ post.title }}</a> </h4>
-            <p class="gray fontSmall">Post on {{ post.date }} by {{ post.author }} in {{ post.category }}</p>
-            <p [innerHtml]="post.content"></p>
+            <p class="gray fontSmall">Post on {{ post.date }} by {{ post.author }}</p>
+            <p [innerHtml]="post.summary"></p>
             <br>
         </div>
     </div>
     <div id="three" *ngIf="tab===3">
         <h2 class="page-subhead">Latest Logs</h2>
-        <div *ngFor="let post of news">
-            <h4> <a href="#">{{ post.title }}</a> </h4>
-            <p class="gray fontSmall">Post on {{ post.date }} by {{ post.author }} in {{ post.category }}</p>
-            <p [innerHtml]="post.content"></p>
-            <br>
+        <div *ngIf="logs.length > 0">
+            <p>TEST</p>
+            <div *ngFor="let post of logs">
+                <h4> <a href="#">{{ post.title }}</a> </h4>
+                <p class="gray fontSmall">Post on {{ post.date }} by {{ post.author }}</p>
+                <p [innerHtml]="post.content"></p>
+                <br>
+            </div>
+        </div>
+        <div *ngIf="logs.length === 0">
+            <h4>There are no perosnal logs to display.</h4>
         </div>
     </div>
 </div>
