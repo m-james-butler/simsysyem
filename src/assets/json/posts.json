@@ -20,7 +20,7 @@
             "id": 1,
             "title": "Dispensing Experience",
             "date" : "02 May 2023 @ 2:01pm",
-            "author": ["Commander Jack Lashmore", "Captain T'Rama"],
+            "authors": ["Commander Jack Lashmore", "Captain T'Rama"],
             "summary": "The past seventeen months were interesting, to say the least. Despite rather cryptic orders to take command of the retrofit of a beaten-down Luna class starship, the truth and reality were quite something else. First, T'Rama and Jack did not go near their supposed command and in fact, spent the",
             "content": "Lorem Ipsum"
         },
@@ -28,7 +28,7 @@
             "id": 2,
             "title": "Room to Make His Big Mistakes",
             "date" : "24 April 2023 @ 12:50am",
-            "author": ["Lieutenant Luka Matashi"],
+            "authors": ["Lieutenant Luka Matashi"],
             "summary": "A faint salt-tinged breeze and the sound of Calypso greeted Luka as he entered the holodeck. Captain D'Nii had invited him and specified that the dress code was \"beach party.\" The part of Luka that had grown comfortable on the ship and close to his crewmates wanted to point out…",
             "content": "Lorem Ipsum"
         }

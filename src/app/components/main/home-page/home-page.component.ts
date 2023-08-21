@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import pages from "../../../../assets/json/main-pages.json";
 import posts from "../../../../assets/json/posts.json";
+import { Post } from 'src/app/models/post.model';
+import { News } from 'src/app/models/news.model';
+
 
 @Component({
   selector: 'app-home-page',
@@ -11,8 +14,8 @@ export class HomePageComponent implements OnInit {
   page: any;
   headerText: string = "Default Text";
   content: string = "Default Content"
-  news: any;
-  postsList: any;
+  news: News[] = [];
+  postsList: Post[] = [];
   logs: any;
   tab: number = 1;
   

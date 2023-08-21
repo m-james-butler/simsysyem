@@ -33,7 +33,7 @@
         <h2 class="page-subhead">Latest Posts</h2>
         <div *ngFor="let post of postsList">
             <h4> <a href="#">{{ post.title }}</a> </h4>
-            <p class="gray fontSmall">Post on {{ post.date }} by {{ post.author }}</p>
+            <p class="gray fontSmall">Post on {{ post.date }} by <a *ngFor="let auth of post.authors" href="#">{{ auth }}, </a></p>
             <p [innerHtml]="post.summary"></p>
             <br>
         </div>
