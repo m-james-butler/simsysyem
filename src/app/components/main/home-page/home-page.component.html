@@ -23,7 +23,7 @@
     <div id="one" *ngIf="tab===1">
         <h2 class="page-subhead">Latest News Items</h2>
         <div *ngFor="let post of news">
-            <h4> <a href="#">{{ post.title }}</a> </h4>
+            <h4> <a [routerLink]="['./News', post.id]">{{ post.title }}</a> </h4>
             <p class="gray fontSmall">Post on {{ post.date }} by {{ post.author }} in {{ post.category }}</p>
             <p [innerHtml]="post.content"></p>
             <br>

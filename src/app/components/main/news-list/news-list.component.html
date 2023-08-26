@@ -1,0 +1,25 @@
+<h1 class="page-head"> {{header_text}} </h1>
+
+<div id="news">
+    <strong class="fontNormal">Categories</strong>
+    <div class="fontSmall">
+        · <ng-container *ngFor="let category of categories">
+            <a (click)="filterList(category)">{{category}}</a> · 
+        </ng-container>
+    </div>
+
+    <div class="news" *ngFor="let newsItem of filteredNews">
+        <br />
+        <h3>
+            <a [routerLink]="['./', newsItem.id]">{{newsItem.title}}</a>
+        </h3>
+        <p [innerHtml]="newsItem.summary"></p>
+        <p class="fontSmall gray">
+            <strong>Author:</strong> <a> {{newsItem.author}}</a>
+            <br/>
+            <strong>Posted On: </strong> {{newsItem.date}}
+            <br/>
+            <strong>Category: </strong> {{newsItem.category}}
+        </p>
+    </div>
+</div>

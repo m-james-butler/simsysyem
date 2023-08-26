@@ -383,3 +383,7 @@ a.edit:hover {
   border-top: 3px solid var(--header-bg-color);
   background: var(--generic-bg-color);
 }
+
+.gray {
+  color: var(--neutral-text-color);
+}

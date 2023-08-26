@@ -4,13 +4,13 @@
       "children": ["Main", "News", "Contact", "Credits", "Join", "Rules"]
     },
     "Personnel": {
-      "children": ["Main", "News", "Contact", "Credits", "Join", "Rules"]
+      "children": ["Manifest", "Chain of Command", "Crew Awards", "Join"]
     },
     "Sim": {
-      "children": ["Main", "News", "Contact", "Credits", "Join", "Rules"]
+      "children": ["The Sim", "Missions", "Mission Groups", "Personal Logs", "Stats", "Crew Awards", "Tour", "Specifications", "Deck Listing", "Departments"]
     },
     "Archives": {
-      "children": ["Main", "News", "Contact", "Credits", "Join", "Rules"]
+      "children": []
     },
     "Search": {
       "children": []

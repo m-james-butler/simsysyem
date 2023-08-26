@@ -1,0 +1,9 @@
+<h1 class="page-head">{{newsItem.title}}</h1>
+
+<p class="fontSmall gray">Posted on {{newsItem.date}} by <a>{{newsItem.author}}</a></p>
+
+<p [innerHtml]="newsItem.content"></p>
+
+<p class="fontSmall gray">
+    <strong>Category:</strong> {{newsItem.category}}
+</p>

@@ -1,17 +1,21 @@
 {
     "news": [
         {
+            "id": 1,
             "title": "Memory Theta Birthday Extravaganza!",
             "date": "Mon Oct 3rd, 2022 @ 7:04pm",
             "author": "Captain Mrazak",
             "category": "General News",
+            "summary": "\"<em>Red Rover, Red Rover, on 31st of Octiber <br> The Thetanomican was written and wrought <br> What better reason than Halloween season <br> That Memory Theta should never be forgot?\"</em><br><br> Five years ago in October of 2017, I stumbled through dark conjurings and profane utterances to install Nova into the database that would become...",
             "content": "\"<em>Red Rover, Red Rover, on 31st of Octiber <br> The Thetanomican was written and wrought <br> What better reason than Halloween season <br> That Memory Theta should never be forgot?\"</em><br><br> Five years ago in October of 2017, I stumbled through dark conjurings and profane utterances to install Nova into the database that would become Memory Theta. In commemoration of half a decade of awesome roleplay, I am pleased to initiate a special interlude that will send the Memory Theta team to Risa for a much-needed vacation. Of course, nothing ever seems to go according to plan, but that's always been half the fun. Thank you, one and all, for joining me on this journey of discovery and exploration into a side of Star Trek that had yet to be explored at the time of our beginning. I daresay that our not-so-humble sim has made an indelible mark on the simming community and perhaps sent waves clear up to the writing rooms of modern Trek production (I'm looking at you, Lower Decks!). <br><br> Kick back, run wild on Risa, and pat yourselves on the back for five years of greatness. Here's to five more! <br><br> <img src=\"https://media.tenor.com/u_R_zH2ozxoAAAAC/kowalski-read-this.gif\">"
         },
         {
+            "id": 2,
             "title": "The Simming Prize",
             "date": "Wed Feb 16th, 2022 @ 9:45pm",
             "author": "Captain Mrazak",
             "category": "General News",
+            "summary": "<em>\"One of the best role plays on the net today, Memory Theta excels in all aspects of simming. From deep character development to intricate plot devices to taking the unexpected turn, this crew always keeps things interesting. Their commitment to excellence has been recognized many times over, most recently by...",
             "content": "<em>\"One of the best role plays on the net today, Memory Theta excels in all aspects of simming. From deep character development to intricate plot devices to taking the unexpected turn, this crew always keeps things interesting. Their commitment to excellence has been recognized many times over, most recently by taking home top prize at the Tournament of Simulations.\"</em><br><br> Truth be told, I had never heard of this particular award before, but it appears we were nominated multiple times last year since the explanation given includes our top place in last year's Tournament of Sims. I have no idea who nominated because I had no idea we were nominated. Congratulations on becoming internet famous!"
         }
     ],
@@ -21,7 +25,7 @@
             "title": "Dispensing Experience",
             "date" : "02 May 2023 @ 2:01pm",
             "authors": ["Commander Jack Lashmore", "Captain T'Rama"],
-            "summary": "The past seventeen months were interesting, to say the least. Despite rather cryptic orders to take command of the retrofit of a beaten-down Luna class starship, the truth and reality were quite something else. First, T'Rama and Jack did not go near their supposed command and in fact, spent the",
+            "summary": "The past seventeen months were interesting, to say the least. Despite rather cryptic orders to take command of the retrofit of a beaten-down Luna class starship, the truth and reality were quite something else. First, T'Rama and Jack did not go near their supposed command and in fact, spent the...",
             "content": "Lorem Ipsum"
         },
         {
